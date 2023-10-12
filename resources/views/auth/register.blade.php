@@ -8,10 +8,10 @@
     <div class="card">
       <div class="card-body register-card-body">
         <p class="login-box-msg">Register a new membership</p>
-
-        <form  method="POST" action="{{ route('register') }} >
+        <x-validation-errors class="mb-4 text-danger" />
+        <form  method="POST" action="{{ route('register') }}">
             @csrf
-            @method('post')
+
           <div class="input-group mb-3">
             <input type="text" name="name" class="form-control" :value="old('name')" required autofocus placeholder="Full name">
             <div class="input-group-append">
@@ -53,21 +53,10 @@
                  I agree to the <a href="#">terms</a>
                 </label>
               </div>
-            </div>
-                  {{-- <div class="flex items-center">
-
-
-                      <div class="ml-2">
-                          {!! __('I agree to the :terms_of_service and :privacy_policy', [
-                                  'terms_of_service' => '<a target="_blank" href="'.route('terms.show').'" class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">'.__('Terms of Service').'</a>',
-                                  'privacy_policy' => '<a target="_blank" href="'.route('policy.show').'" class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">'.__('Privacy Policy').'</a>',
-                          ]) !!}
-                      </div>
-                  </div> --}}
-
-
-            <!-- /.col -->
-<button type="submit">Submit</button>
+            </div>       <!-- /.col -->
+            <div class="col-4">
+                <button type="submit" class="btn btn-primary btn-block">Register</button>
+              </div>
             <!-- /.col -->
           </div>
 
