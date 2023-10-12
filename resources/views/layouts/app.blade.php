@@ -248,15 +248,35 @@
           </li>
           <li class="nav-item">
             <a href="pages/widgets.html" class="nav-link">
-
-                    <i class="nav-icon fas ion-person-add"></i>
-
-
+                    <i class="nav-icon fas   ion-person-add"></i>
               <p>
                Users
                 <span class="right badge badge-danger">New</span>
               </p>
             </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-table"></i>
+              <p>
+                Users
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a href="pages/tables/data.html" class="nav-link">
+                        <i class="nav-icon fas   ion-person"></i>
+                      <p>User List</p>
+                    </a>
+                  </li>
+              <li class="nav-item">
+                <a href="pages/tables/simple.html" class="nav-link">
+                    <i class="nav-icon fas   ion-person-add"></i>
+                  <p>Add User</p>
+                </a>
+              </li>
+            </ul>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
