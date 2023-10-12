@@ -247,6 +247,18 @@
             </a>
           </li>
           <li class="nav-item">
+            <a href="pages/widgets.html" class="nav-link">
+
+                    <i class="nav-icon fas ion-person-add"></i>
+
+
+              <p>
+               Users
+                <span class="right badge badge-danger">New</span>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-copy"></i>
               <p>
@@ -845,9 +857,9 @@
     </div>
     <!-- /.sidebar -->
   </aside>
-  <div >
+  {{-- <div >
     @yield('content')
-  </div>
+  </div> --}}
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
